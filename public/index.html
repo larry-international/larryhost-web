@@ -66,8 +66,9 @@
                 </div>
 
                 <div style="padding-left: 80px">
+                    <!-- Purely exists so we don't redirect the user to our API endpoint-->
                     <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-                    <form class="form-horizontal" action="https://api.larryho.st/interest-form" target="dummyframe">
+                    <form class="form-horizontal" action="https://api.larryho.st/interest-form" id="interest-form" target="dummyframe">
                         <fieldset>
                             <!-- Form Name -->
                             <p style="color: black; font-size: 32px;">
@@ -117,15 +118,17 @@
                 <div class="modal-background"></div>
                 <div class="modal-card">
                     <header class="modal-card-head">
-                        <p class="modal-card-title">Modal title</p>
-                        <button class="delete" aria-label="close"></button>
+                        <p class="modal-card-title">Interest Form</p>
+                        <button class="delete" id="modal-close-corner"></button>
                     </header>
                     <section class="modal-card-body">
-                        <!-- Content ... -->
+                        <p>
+                            We have received your feedback!<br>
+                            We're still figuring things out, and deciding how exactly we're going to operate in the future. We appreciate all feedback, whether that be from potential users or "competitors".
+                        </p>
                     </section>
                     <footer class="modal-card-foot">
-                        <button class="button is-success">Save changes</button>
-                        <button class="button">Cancel</button>
+                        <button class="button" id="modal-close">Close</button>
                     </footer>
                 </div>
             </div>
@@ -149,6 +152,13 @@
         </div>
     </div>
 </div>
+
+<script src="js/custom.js"></script>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+        crossorigin="anonymous">
+</script>
 </body>
 </html>
 

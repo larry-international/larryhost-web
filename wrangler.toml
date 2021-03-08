@@ -2,7 +2,7 @@ name = "larryhost"
 type = "webpack"
 account_id = "38df507baff0cce8d7b17a60f4f4b1c9"
 workers_dev = true
-route = "*.larryho.st/*"
+route = "larryho.st/*"
 zone_id = "86bfc2063658c5e6df5135538455e3df"
 
 [site]

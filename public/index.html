@@ -15,10 +15,9 @@
     <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/feather/feather.css">
     <link rel="stylesheet" href="css/custom.css">
-
 </head>
 <body>
 
@@ -39,7 +38,8 @@
                     <div style="display: flex; align-items: center;">
                         <a href="#">
                             <button class="button"
-                                    style="background-color: #008080; color: white; font-weight: bold; text-transform: uppercase;" onclick="alert('Great success')">
+                                    style="background-color: #008080; color: white; font-weight: bold; text-transform: uppercase;"
+                                    onclick="alert('Great success')">
                                 Larry International
                             </button>
                         </a>
@@ -54,21 +54,29 @@
 <section class="hero is-medium">
     <div class="hero-body">
         <div class="container">
-            <div class="columns is-vcentered">
+            <div class="columns is-centered">
                 <div class="column is-half">
                     <div class="content hello">
+
                         <p style="color: black; font-size: 32px;">
                             <span class="underline primary">LarryHost</span> is asking you<br>what would you like to see
                             from a <span class="underline primary">free host.</span><br>
                             <span style="font-size: 18px; font-style: italic;">coming summer 2021</span>
                         </p>
+
+<!--                        <div>-->
+<!--                            <a href="https://larryho.st/free/apply.html">-->
+<!--                                <button class="button is-primary""-->
+<!--                                        style="margin-top: 10px; background-color: #25c151; color: white; font-weight: bold; text-transform: uppercase;">-->
+<!--                                    Get your free plan!-->
+<!--                                </button>-->
+<!--                            </a>-->
+<!--                        </div>-->
                     </div>
                 </div>
 
-                <div style="padding-left: 80px">
-                    <!-- Purely exists so we don't redirect the user to our API endpoint-->
-                    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
-                    <form class="form-horizontal" action="https://api.larryho.st/interest-form" id="interest-form" target="dummyframe">
+                <div style="width:600px">
+                    <form action="https://api.larryho.st/interest-form" id="interest-form" target="dummyframe">
                         <fieldset>
                             <!-- Form Name -->
                             <p style="color: black; font-size: 32px;">
@@ -79,7 +87,8 @@
                             <div class="field">
                                 <label class="label" for="interest-name">Name</label>
                                 <div class="control">
-                                    <input id="interest-name" name="interest-name" type="text" placeholder="Larry Edwards" class="input ">
+                                    <input id="interest-name" name="interest-name" type="text" placeholder="Larry Edwards"
+                                           class="input ">
                                 </div>
                             </div>
 
@@ -87,20 +96,23 @@
                             <div class="field">
                                 <label class="label" for="interest-email">Email Address</label>
                                 <div class="control">
-                                    <input id="interest-email" name="interest-email" type="text" placeholder="someone@something.tld" class="input ">
+                                    <input id="interest-email" name="interest-email" type="text" placeholder="someone@something.tld"
+                                           class="input ">
 
                                 </div>
                             </div>
 
                             <!-- Textarea -->
                             <div class="field">
-                                <label class="label" for="interest-message">What products would you be interested in from LarryHost?</label>
+                                <label class="label" for="interest-message">What products would you be interested in from
+                                    LarryHost?</label>
                                 <div class="control">
                                     <textarea class="textarea" id="interest-message" name="interest-message"></textarea>
                                 </div>
                             </div>
 
-                            <span style="font-size: 14px; font-style: italic;">by hitting submit you are agreeing to our <a href="privacy.html">privacy policy</a></span>
+                            <span style="font-size: 14px; font-style: italic;">by hitting submit you are agreeing to our <a
+                                    href="privacy.html">privacy policy</a></span>
 
                             <!-- Button -->
                             <div class="field">
@@ -112,31 +124,30 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>
 
-            <div class="modal">
-                <div class="modal-background"></div>
-                <div class="modal-card">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Interest Form</p>
-                        <button class="delete" id="modal-close-corner"></button>
-                    </header>
-                    <section class="modal-card-body">
-                        <p>
-                            We have received your feedback!<br>
-                            We're still figuring things out, and deciding how exactly we're going to operate in the future. We appreciate all feedback, whether that be from potential users or "competitors".
-                        </p>
-                    </section>
-                    <footer class="modal-card-foot">
-                        <button class="button" id="modal-close">Close</button>
-                    </footer>
+                <div class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Interest Form</p>
+                            <button class="delete" id="modal-close-corner"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <p>
+                                We have received your feedback!<br>
+                                We're still figuring things out, and deciding how exactly we're going to operate in the future. We
+                                appreciate all feedback, whether that be from potential users or "competitors".
+                            </p>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button class="button" id="modal-close">Close</button>
+                        </footer>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-
 <!-- Footer -->
 <div class="section" id="footer" style="color: black;">
     <div class="item columns" style="">
@@ -154,11 +165,12 @@
 </div>
 
 <script src="js/custom.js"></script>
-<script
-        src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
         crossorigin="anonymous">
 </script>
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
 </body>
 </html>
 
